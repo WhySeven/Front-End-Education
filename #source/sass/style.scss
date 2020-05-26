@@ -1,8 +1,66 @@
-:root {
-	--color: #519144;
+$Dark50: rgba(31,32,65,0.5);
+$Dark75: rgb(31,32,65,0.75);
+$grad: linear-gradient(#BC9CFF, #8BA4F9);
+$border: 5px;
+body{
+	max-width: 1440px;
+	margin:auto;
+	font-family: 'Montserrat';
 }
-
-body {
-	background-color: #000;
-	color: var(--color);
+.header{
+	display:flex;
+	.header__logo{
+		display: block;
+		margin-left:140px;
+		margin:15px 0 15px 140px;
+		height: 40px;
+	}
+	.menu{
+		font-size: 14px;
+		margin-left:auto;
+		.menu__list{
+			list-style: none;
+			display:flex;
+			padding-left: 0;
+			margin: 0;
+			.menu__item{
+				margin-right: 30px;
+				border: 1px solid #000;
+				.menu__link{
+					color: $Dark50;
+					text-decoration: none;
+				}
+				.menu__link_hover{
+					text-decoration: none;
+					font-weight: bold;
+					color: $Dark75;
+				}
+			}
+			.pre-icon{margin-right: 0;}
+			.icon{margin-right: 20px;}
+		}		
+	}
+	.user{
+		margin: auto 140px auto 0;
+		.user__button {
+			border:none;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 12px;
+			font-weight: bold;
+			border-radius: 22px;
+			padding: 10px 20px;
+		}
+		.login{	
+			background: #fff;
+			color: #BC9CFF;
+			border: 2px solid #BC9CFF;
+			padding: 8px 20px;
+			margin-right: 15px;
+		}
+		.register{
+			background: $grad;
+			color: #fff;
+		}
+	}
 }
