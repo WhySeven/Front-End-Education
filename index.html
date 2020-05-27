@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
   </head>
   <body>
-    <header class="header"><img class="header__logo" src="img/Logo.png">
-      <nav class="menu">
+    <header class="header">
+      <div class="header__logo logo"><img class="logo__img" src="img/logo.png"></div>
+      <nav class="header__menu menu">
         <ul class="menu__list">
-          <!--li(class="menu__item")a(class="menu__link_hover", href="#") Home
-          -->
           <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
           <li class="menu__item pre-icon"><a class="menu__link" href="#">Услуги</a></li>
-          <li class="menu__item icon"><a class="menu__link material-icons" href="#">expand_more</a></li>
+          <li class="menu__item menu__item_icon"><a class="menu__link material-icons" href="#">expand_more</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
           <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
-          <li class="menu__item pre-icon"><a class="menu__link" href="#">Соглашения</a></li>
-          <li class="menu__item icon"><a class="menu__link material-icons" href="#">expand_more</a></li>
+          <li class="menu__item menu__item_pre-icon"><a class="menu__link" href="#">Соглашения</a></li>
+          <li class="menu__item menu__item_icon"><a class="menu__link material-icons" href="#">expand_more</a></li>
         </ul>
       </nav>
-      <div class="user"><a class="user__button login" href="#">ВОЙТИ</a><a class="user__button register" href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a></div>
+      <div class="user"><a class="button user__log" href="#">ВОЙТИ</a><a class="button user__reg" href="#">ЗАРЕГИСТРИРОВАТЬСЯ</a></div>
     </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -3,70 +3,95 @@ body {
   font-weight: 500;
   max-width: 1440px;
   margin: auto;
+  background: #E5E5E5;
 }
 
 .header {
   display: flex;
+  height: 70px;
+  background: #fff;
 }
-.header .header__logo {
-  display: block;
-  margin-left: 140px;
+.header__logo {
   margin: 15px 0 15px 140px;
-  height: 40px;
 }
-.header .menu {
-  font-size: 14px;
+.header__menu {
   margin-left: auto;
 }
-.header .menu .menu__list {
+
+.logo {
+  display: block;
+  height: 40px;
+}
+
+.menu {
+  font-size: 14px;
+}
+.menu__list {
   list-style: none;
   display: flex;
   padding-left: 0;
   margin: 0;
   margin-top: 26px;
 }
-.header .menu .menu__list .menu__item {
+.menu__item {
   margin-right: 20px;
 }
-.header .menu .menu__list .menu__item .menu__link {
-  color: rgba(31, 32, 65, 0.5);
-  text-decoration: none;
-}
-.header .menu .menu__list .menu__item .material-icons {
-  font-size: 24px;
-  color: rgba(31, 32, 65, 0.5);
-  margin-top: -2px;
-}
-.header .menu .menu__list .menu__item .menu__link_hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: rgba(31, 32, 65, 0.75);
-}
-.header .menu .menu__list .pre-icon {
+.menu__item_pre-icon {
   margin-right: 0;
 }
-.header .user {
-  margin: auto 140px auto 0;
+.menu__item_icon {
+  margin-top: -2px;
 }
-.header .user .user__button {
+.menu__link {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+.menu .material-icons {
+  font-size: 24px;
+}
+
+.button {
   border: none;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  line-height: 14.63px;
-  line-height: 100%;
   border-radius: 22px;
 }
-.header .user .login {
+
+.user__log {
   background: #fff;
   color: #BC9CFF;
   border: 2px solid #BC9CFF;
-  padding: 9px 18px 10px 18px;
+  padding: 8px 19px 7px 18px;
   margin-right: 20px;
+  margin-top: 18px;
 }
-.header .user .register {
+.user__reg {
   background: linear-gradient(#BC9CFF, #8BA4F9);
   color: #fff;
-  padding: 11px 20px 11px 20px;
+  padding: 10px 20px 9px 20px;
+  margin-right: 140px;
+  margin-top: 18px;
+}
+
+.main {
+  background-image: url(../img/background-landing.png);
+  height: 830px;
+}
+
+.footer {
+  background: #fff;
+  height: 442px;
+}
+.footer__logo {
+  padding: 100px 0 0 140px;
+}
+.footer__info-text {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.text-block {
+  width: 260px;
+  height: 72px;
 }

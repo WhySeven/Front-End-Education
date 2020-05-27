@@ -1,72 +1,15 @@
-$Dark50: rgba(31,32,65,0.5);
-$Dark75: rgb(31,32,65,0.75);
-$grad: linear-gradient(#BC9CFF, #8BA4F9);
+@import 'vars';
 body{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	max-width: 1440px;
 	margin:auto;
+	background: #E5E5E5;
 }
-.header{
-	display:flex;
-	.header__logo{
-		display: block;
-		margin-left:140px;
-		margin:15px 0 15px 140px;
-		height: 40px;
-	}
-	.menu{
-		font-size: 14px;
-		margin-left:auto;
-		.menu__list{
-			list-style: none;
-			display:flex;
-			padding-left: 0;
-			margin: 0;
-			margin-top:26px;		
-			.menu__item{
-				margin-right: 20px;
-				.menu__link{
-					color: $Dark50;
-					text-decoration: none;
-				}
-				.material-icons{
-					font-size: 24px;
-					color: $Dark50;
-					margin-top: -2px;
-				}
-				.menu__link_hover{
-					text-decoration: none;
-					font-weight: bold;
-					color: $Dark75;
-				}
-			}
-			.pre-icon{margin-right: 0;}
-		}		
-	}
-	.user{
-		margin: auto 140px auto 0;
-		.user__button {
-			border:none;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 12px;
-			font-weight: 600;
-			line-height: 14.63px;
-			line-height: 100%;
-			border-radius: 22px;
-		}
-		.login{	
-			background: #fff;
-			color: #BC9CFF;
-			border: 2px solid #BC9CFF;
-			padding: 9px 18px 10px 18px;
-			margin-right: 20px;
-		}
-		.register{
-			background: $grad;
-			color: #fff;
-			padding: 11px 20px 11px 20px;
-		}
-	}
-}
+@import 'vars';
+
+@import 'header';
+
+@import 'main';
+
+@import 'footer';

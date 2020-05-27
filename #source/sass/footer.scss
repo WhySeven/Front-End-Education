@@ -1,0 +1,12 @@
+.footer{
+    background: #fff;
+    height: 442px;
+    &__logo{padding:100px 0 0 140px;}
+    &__info-text{
+        color: $Dark75;
+    }
+}
+.text-block{
+    width: 260px;
+    height: 72px;
+}
