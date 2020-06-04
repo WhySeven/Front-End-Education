@@ -1,0 +1,45 @@
+.text-field{
+    width: 320px;
+    height: 44px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid $Dark25;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 13px 0 13px 15px;
+    &::placeholder{color: $Dark25;}
+    .font-body{
+        line-height: 18px;
+        color: $Dark25;
+    }
+    &:hover{
+        border: 1px solid $Dark50;
+        &::placeholder{
+            color: $Dark75;
+        }
+    }
+    &:focus{
+        border: 1px solid $Dark50;
+        &::placeholder{
+            color: $Dark75;
+        }
+    }
+    &_hover{
+        border: 1px solid $Dark50;
+        &::placeholder{
+            color: $Dark75;
+        }
+    }
+}
+.text-block{
+    width: 320px;
+    &__title{ 
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right-text {
+        color: $Dark50;
+        margin-bottom:8px;
+        font-weight: normal;
+    }
+}

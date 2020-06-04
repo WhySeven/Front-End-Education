@@ -1,0 +1,11 @@
+@import "../../../common-blocks/text-field/text-field";
+
+@import "../../../common-blocks/dropdown/dropdown";
+
+.form-elements{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@import "../../../common-blocks/checkbox/checkbox";

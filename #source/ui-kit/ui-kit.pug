@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+    head
+        link(rel="stylesheet" href="ui-kit.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap")
+        link(href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+
+    body(class="body")
+        main
+            include elements/color&type/color&type.pug
+
+            include elements/form-elements/form-elements.pug
+            
+        script(src="../js/jquery.mask.min.js")

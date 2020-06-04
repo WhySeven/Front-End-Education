@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   </head>
   <body class="body">
     <main>
-      <div class="colors-type">
+      <div class="colors-type wrapper">
         <div class="colors-type__colors">
           <div class="color color__margin">
             <div class="sqr drk-100"></div>
@@ -48,14 +49,85 @@
               <div class="font-block__name font-block__name_body">Body</div>
             </div>
             <div class="font-block__fonts">
-              <div class="font-h1 font-block__font-margin">This one is the sub-section or<br> widget title    </div>
-              <div class="font-h2 font-block__font-margin">Next one is the item title inside<br> widgets                      </div>
-              <div class="font-h3 font-block__font-margin">This is a label or CTA text</div>
-              <div class="font-body font-block__font-margin">This is the body text which is used for most<br> of the design, like paragraphs, lists, etc.</div>
+              <div class="font-block__font-margin"> 
+                <H1 class="font-h1">This one is the sub-section or<br> widget title    </H1>
+              </div>
+              <div class="font-block__font-margin"> 
+                <H2 class="font-h2">Next one is the item title inside<br> widgets                      </H2>
+              </div>
+              <div class="font-block__font-margin">
+                <H3 class="font-h3">This is a label or CTA text</H3>
+              </div>
+              <div class="font-body font-block__font-margin">
+                <p class="font-body">This is the body text which is used for most<br> of the design, like paragraphs, lists, etc.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="form-elements wrapper">
+        <div class="form-elements__1-column">
+          <div class="text-block">
+            <div class="text-block__title">
+              <h3 class="font-h3">text field</h3>
+              <h3 class="font-h3 text-block__right-text">default</h3>
+            </div>
+            <input class="text-field font-body" type="text" placeholder="Email">
+          </div>
+          <div class="text-block">
+            <div class="text-block__title">
+              <h3 class="font-h3">text field</h3>
+              <h3 class="font-h3 text-block__right-text">hover/focus</h3>
+            </div>
+            <input class="text-field text-field_hover font-body" type="text" placeholder="This is pretty awesome">
+          </div>
+          <div class="text-block">
+            <div class="text-block__title">
+              <h3 class="font-h3">dropdown</h3>
+              <h3 class="font-h3 text-block__right-text">default</h3>
+            </div>
+            <div class="dropdown">
+              <ul class="dropdown__list font-body">Сколько гостей
+                <li class="dropdown__item dropdown__item_frst"><a class="dropdown__link" href="#">1</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">2</a></li>
+                <li class="dropdown__item"><a class="dropdown__link" href="#">3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-block">
+            <div class="text-block__title">
+              <h3 class="font-h3">masked text field</h3>
+              <h3 class="font-h3 text-block__right-text">default</h3>
+            </div>
+            <input class="text-field font-body" type="text" data-mask="00.00.0000" placeholder="ДД.ММ.ГГГГ">
+          </div>
+        </div>
+        <div class="form-elements__2-column">
+          <div class="checkbox-block">
+            <h3 class="font-h3 checkbox-block__label">checkbox buttons</h3>
+            <div class="checkbox-block__checkbox">
+              <label class="checkbox">
+                <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
+              </label>
+              <p class="checkbox-block__text font-body">Можно курить</p>
+            </div>
+            <div class="checkbox-block__checkbox">
+              <label class="checkbox">
+                <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
+              </label>
+              <p class="checkbox-block__text font-body">Можно с питомцами</p>
+            </div>
+            <div class="checkbox-block__checkbox">
+              <label class="checkbox">
+                <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
+              </label>
+              <p class="checkbox-block__text font-body">Можно пригласить гостей<br>(до 10 человек)</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-elements__3-column"></div>
+      </div>
     </main>
+    <script src="../js/jquery.mask.min.js"></script>
   </body>
 </html>

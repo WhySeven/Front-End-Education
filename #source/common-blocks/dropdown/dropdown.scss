@@ -1,0 +1,18 @@
+.dropdown{
+    border-radius: 4px;
+    border:1px solid $Dark25;
+    & :hover{
+        .dropdown__item{display: block;}
+    }
+    &__list{
+        list-style: none;
+        padding:10px 0 10px 15px;
+    }
+    &__item{
+        display: none;
+    }
+    &__link{
+        text-decoration: none;
+        color:#000;
+    }
+}

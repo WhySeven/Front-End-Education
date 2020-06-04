@@ -1,13 +1,4 @@
-@import 'vars';
-.body{
-    background-color: #E5E5E5;
-    width:1440px;
-    margin:0;
-    padding:0;
-    margin-left:auto;
-    margin-right:auto;
-}
-.colors-type{display: flex; background-color: #fff;}
+.colors-type{display: flex;}
 .colors-type__colors{margin:145px 0 145px 150px;}
 .colors-type__fonts{margin:145px 150px 0 auto;}
 .color__h2{
@@ -39,37 +30,6 @@
 .green{background: $Green;}
 
 .font-block{display:flex;}
-
-.font-h1{
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-}
-.font-h2{
-    font-family: Quicksand;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-}
-.font-h3{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-
-}
-.font-body{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-}
 
 .font-block__name{
     color:$Dark25;

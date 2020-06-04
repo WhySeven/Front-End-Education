@@ -1,0 +1,24 @@
+div(class='form-elements wrapper')
+    div(class="form-elements__1-column")
+        div(class="text-block")
+            div(class="text-block__title")
+                h3(class="font-h3") text field
+                h3(class="font-h3 text-block__right-text") default
+            include ../../../common-blocks/text-field/text-field.pug
+        div(class="text-block")
+            div(class="text-block__title")
+                h3(class="font-h3") text field
+                h3(class="font-h3 text-block__right-text") hover/focus
+            input(type="text" class="text-field text-field_hover font-body" placeholder="This is pretty awesome")
+        div(class="text-block")
+            div(class="text-block__title")
+                h3(class="font-h3") dropdown
+                h3(class="font-h3 text-block__right-text") default
+            include ../../../common-blocks/dropdown/dropdown.pug
+        include ../../../common-blocks/text-field/_masked/text-field_masked.pug
+
+    div(class="form-elements__2-column")
+        include ../../../common-blocks/checkbox/checkbox.pug
+            
+    div(class="form-elements__3-column")
+    
