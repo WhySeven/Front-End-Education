@@ -103,29 +103,161 @@
           </div>
         </div>
         <div class="form-elements__2-column">
-          <div class="checkbox-block">
-            <h3 class="font-h3 checkbox-block__label">checkbox buttons</h3>
-            <div class="checkbox-block__checkbox">
-              <label class="checkbox">
-                <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
-              </label>
-              <p class="checkbox-block__text font-body">Можно курить</p>
+          <div class="form-elements__checkbox">
+            <div class="checkbox-block">
+              <h3 class="font-h3 checkbox-block__label">checkbox buttons</h3>
+              <div class="checkbox-block__checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
+                </label>
+                <p class="checkbox-block__text font-body">Можно курить</p>
+              </div>
+              <div class="checkbox-block__checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
+                </label>
+                <p class="checkbox-block__text font-body">Можно с питомцами</p>
+              </div>
+              <div class="checkbox-block__checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
+                </label>
+                <p class="checkbox-block__text font-body">Можно пригласить гостей (до 10 человек)</p>
+              </div>
             </div>
-            <div class="checkbox-block__checkbox">
-              <label class="checkbox">
-                <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
-              </label>
-              <p class="checkbox-block__text font-body">Можно с питомцами</p>
+          </div>
+          <div class="form-elements__radioButton">
+            <div class="radioButton-block">
+              <h3 class="font-h3 radioButton-block__label">radio buttons</h3>
+              <div class="radioButton-block__radioButtons">
+                <div class="radioButton-block__radioButton">
+                  <label class="radioButton">
+                    <input class="radioButton__main" type="radio" name="radio_1" checked>
+                    <p class="radioButton__text font-body">Мужчина</p>
+                  </label>
+                </div>
+                <div class="radioButton-block__radioButton">
+                  <label class="radioButton">
+                    <input class="radioButton__main" type="radio" name="radio_1">
+                    <p class="radioButton__text font-body">Женщина</p>
+                  </label>
+                </div>
+              </div>
             </div>
-            <div class="checkbox-block__checkbox">
-              <label class="checkbox">
-                <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
-              </label>
-              <p class="checkbox-block__text font-body">Можно пригласить гостей<br>(до 10 человек)</p>
+          </div>
+          <div class="form-elements__toggle">
+            <div class="toggles-block">
+              <h3 class="font-h3 toggles-block__label">toggle</h3>
+              <div class="toggles">
+                <div class="toggle-block">
+                  <div class="toggle active" onclick="this.classList.toggle('active')">
+                    <div class="toggle__circle"></div>
+                  </div>
+                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
+                </div>
+                <div class="toggle-block">
+                  <div class="toggle" onclick="this.classList.toggle('active')">
+                    <div class="toggle__circle"></div>
+                  </div>
+                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements__like-button">
+            <div class="like-block">
+              <h3 class="font-h3 like-block__label">like button</h3>
+              <div class="like-buttons">
+                <div class="like" id="like_1"><span class="material-icons like__icon_1">favorite_border</span>
+                  <p class="font-body like__font" id="like__count_1">2</p>
+                </div>
+                <div class="like active" id="like_2"><span class="material-icons like__icon_2">favorite</span>
+                  <p class="font-body like__font" id="like__count_2">12</p>
+                </div>
+              </div>
+              <script>$('#like_1').click(function(){
+    let count = parseInt($('#like__count_1').text());
+    if ($(this).hasClass('active')){
+        count++;
+        $('#like__count_1').text(count);
+        $('.like__icon_1').text('favorite_border');
+    }
+    else{
+        count--;
+        $('#like__count_1').text(count);
+        $('.like__icon_1').text('favorite');
+    }
+    console.log(count);
+    
+});
+
+$('#like_2').click(function(){
+    let count = parseInt($('#like__count_2').text());
+    if ($(this).hasClass('active')){
+        count++;
+        $('#like__count_2').text(count);
+        $('.like__icon_2').text('favorite_border');
+    }
+    else{
+        count--;
+        $('#like__count_2').text(count);
+        $('.like__icon_2').text('favorite');
+    }
+    console.log(count);
+
+});
+
+$('.like').click(function(){
+    $(this).toggleClass("active");
+});
+              </script>
             </div>
           </div>
         </div>
-        <div class="form-elements__3-column"></div>
+        <div class="form-elements__3-column">
+          <div class="form-elements__checkbox">
+            <div class="checkbox-block">
+              <h3 class="font-h3 checkbox-block__label">checkbox buttons</h3>
+              <div class="checkbox-block__checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
+                </label>
+                <p class="checkbox-block__text font-body">Можно курить</p>
+              </div>
+              <div class="checkbox-block__checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
+                </label>
+                <p class="checkbox-block__text font-body">Можно с питомцами</p>
+              </div>
+              <div class="checkbox-block__checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
+                </label>
+                <p class="checkbox-block__text font-body">Можно пригласить гостей (до 10 человек)</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-elements__toggle">
+            <div class="toggles-block">
+              <h3 class="font-h3 toggles-block__label">toggle</h3>
+              <div class="toggles">
+                <div class="toggle-block">
+                  <div class="toggle active" onclick="this.classList.toggle('active')">
+                    <div class="toggle__circle"></div>
+                  </div>
+                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
+                </div>
+                <div class="toggle-block">
+                  <div class="toggle" onclick="this.classList.toggle('active')">
+                    <div class="toggle__circle"></div>
+                  </div>
+                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="../js/jquery.mask.min.js"></script>

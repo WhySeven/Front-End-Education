@@ -1,0 +1,41 @@
+.like-buttons{
+    display: grid;
+    grid-template-columns: 42px 42px;
+    grid-column-gap: 10px;
+}
+.like-block{
+    &__label{
+        margin-bottom: 16px;
+    }
+}
+.like{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 11px;
+    border: 1px solid $Dark25;
+    &.active{
+        border: 1px solid $Purple;
+        .like__font{
+            color: $Purple;
+        }
+        .material-icons{
+            font-size: 10px;
+            line-height: 9px;
+            color: $Purple;
+        }
+    }
+    &__font{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .material-icons{
+        font-size: 10px;
+        line-height: 9px;
+        color: $Dark25;
+    }
+}

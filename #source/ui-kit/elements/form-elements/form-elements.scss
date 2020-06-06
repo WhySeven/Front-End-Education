@@ -3,9 +3,27 @@
 @import "../../../common-blocks/dropdown/dropdown";
 
 .form-elements{
+    padding-top: 200px;
+    padding-left: 140px;
     height: 500px;
+    width:1300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    &__checkbox{
+        margin-bottom: 41px;
+    }
+    &__radioButton{
+        margin-bottom: 37px;
+    }
+    &__toggle{
+        margin-bottom: 45px;
+    }
 }
 
 @import "../../../common-blocks/checkbox/checkbox";
+
+@import "../../../common-blocks/radiobutton/radiobutton";
+
+@import "../../../common-blocks/toggle/toggle";
+
+@import "../../../common-blocks/like-button/like-button";

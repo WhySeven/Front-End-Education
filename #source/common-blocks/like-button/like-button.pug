@@ -1,0 +1,11 @@
+div(class="like-block")
+    h3(class="font-h3 like-block__label") like button
+    div(class="like-buttons")
+        div(class="like" id="like_1")
+            span(class="material-icons like__icon_1") favorite_border
+            p(class="font-body like__font" id="like__count_1") 2
+        div(class="like active" id="like_2")
+            span(class="material-icons like__icon_2") favorite
+            p(class="font-body like__font" id="like__count_2") 12
+    script
+        include like-button.js

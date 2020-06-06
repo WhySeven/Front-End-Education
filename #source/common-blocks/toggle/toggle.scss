@@ -1,0 +1,44 @@
+.toggle{
+    position: relative;
+    width:40px;
+    height: 20px;
+    border-radius: 15px;
+    border: 1px solid $Dark25;
+    background:#fff;
+    transition: all 300ms ease-in-out;
+    &__circle{
+        display: block;
+        position: absolute;
+        width:12px;
+        height: 12px;
+        border-radius:50%;
+        background: $Dark25;
+        top: 4px;
+        left: 4px;
+        transition: all 30ms ease-in-out;
+    }
+    &.active{
+        border: 1px solid $Purple;
+        .toggle__circle{
+            margin-left: 20px;
+            background: $grad ;
+        }
+    }
+}
+.toggle-block{
+    display: flex;
+    align-items: center;
+    &__text{
+        margin-left:10px;
+    }
+}
+.toggles-block{
+    &__label{
+        margin-bottom: 16px;
+    }
+}
+.toggles{
+    display: grid;
+    grid-template-rows: 20px 20px;
+    grid-row-gap: 14px;
+}

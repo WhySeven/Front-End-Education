@@ -43,6 +43,9 @@
 }
 
 .wrapper {
+  background-image: url(../img/ui-kit__logo.svg);
+  background-repeat: no-repeat;
+  background-position: top 30px left 30px;
   background-color: #fff;
   width: 1440px;
   margin: 0;
@@ -243,21 +246,33 @@
 }
 
 .form-elements {
+  padding-top: 200px;
+  padding-left: 140px;
   height: 500px;
+  width: 1300px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.form-elements__checkbox {
+  margin-bottom: 41px;
+}
+.form-elements__radioButton {
+  margin-bottom: 37px;
+}
+.form-elements__toggle {
+  margin-bottom: 45px;
+}
 
+.checkbox-block {
+  display: grid;
+  grid-template-rows: 32px 32px 32px 1fr;
+}
 .checkbox-block__checkbox {
   display: grid;
-  grid-template-columns: 30px 300px;
-  border: 1px solid #000;
+  grid-template-columns: 30px 200px;
 }
 .checkbox-block__text {
-  padding-left: 9.74px;
-}
-.checkbox-block__label {
-  padding-bottom: 16.56px;
+  padding-top: 2px;
 }
 .checkbox-block .font-body {
   line-height: 18px;
@@ -285,13 +300,158 @@
 .checkbox__fake::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
   width: 10px;
   height: 10px;
-  background-color: #BC9CFF;
+  background-image: url(../img/checkbox.svg);
   opacity: 0;
   transition: 0.1s;
+}
+
+.radioButton-block {
+  display: grid;
+  grid-template-rows: 32px 1fr;
+}
+.radioButton-block__radioButtons {
+  display: grid;
+  grid-template-columns: 118px 1fr;
+}
+
+.radioButton__text {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.radioButton__text::before {
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+.radioButton__text::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+  opacity: 0;
+  transition: 0.1s;
+}
+.radioButton__main {
+  display: none;
+}
+.radioButton__main:checked + .radioButton__text::after {
+  opacity: 1;
+}
+.radioButton__main:checked + .radioButton__text::before {
+  border: 1px solid #BC9CFF;
+}
+.radioButton__main:checked + .radioButton__text {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: #fff;
+  transition: all 300ms ease-in-out;
+}
+.toggle__circle {
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+  top: 4px;
+  left: 4px;
+  transition: all 30ms ease-in-out;
+}
+.toggle.active {
+  border: 1px solid #BC9CFF;
+}
+.toggle.active .toggle__circle {
+  margin-left: 20px;
+  background: linear-gradient(#BC9CFF, #8BA4F9);
+}
+
+.toggle-block {
+  display: flex;
+  align-items: center;
+}
+.toggle-block__text {
+  margin-left: 10px;
+}
+
+.toggles-block__label {
+  margin-bottom: 16px;
+}
+
+.toggles {
+  display: grid;
+  grid-template-rows: 20px 20px;
+  grid-row-gap: 14px;
+}
+
+.like-buttons {
+  display: grid;
+  grid-template-columns: 42px 42px;
+  grid-column-gap: 10px;
+}
+
+.like-block__label {
+  margin-bottom: 16px;
+}
+
+.like {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 11px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+.like.active {
+  border: 1px solid #BC9CFF;
+}
+.like.active .like__font {
+  color: #BC9CFF;
+}
+.like.active .material-icons {
+  font-size: 10px;
+  line-height: 9px;
+  color: #BC9CFF;
+}
+.like__font {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  line-height: 12px;
+}
+.like .material-icons {
+  font-size: 10px;
+  line-height: 9px;
+  color: rgba(31, 32, 65, 0.25);
 }
