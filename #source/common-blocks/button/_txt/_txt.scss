@@ -1,0 +1,21 @@
+.button_txt{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+}
+.gray-font{
+    color:$Dark50;
+}
+.purple-font{
+    color:$Purple;
+}
+.buttons_txt{
+    width: 142px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons_txt__margin{
+    margin-bottom:30px ;
+}

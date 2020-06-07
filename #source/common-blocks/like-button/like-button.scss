@@ -10,10 +10,15 @@
 }
 .like{
     position: relative;
+    display: flex;
+    align-items: center;
     width: 40px;
     height: 20px;
     border-radius: 11px;
     border: 1px solid $Dark25;
+    &:hover{
+        cursor:default;
+    }
     &.active{
         border: 1px solid $Purple;
         .like__font{
@@ -26,14 +31,14 @@
         }
     }
     &__font{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-size: 10px;
         line-height: 12px;
+        margin-left: 2px;
+        
     }
     .material-icons{
+        width: 20px;
+        text-align: center;
         font-size: 10px;
         line-height: 9px;
         color: $Dark25;

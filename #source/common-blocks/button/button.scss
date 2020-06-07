@@ -1,0 +1,47 @@
+.button{
+    text-transform: uppercase;
+    border:none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &__bordered{
+        height: 40px;
+        width: 95px;
+        background: #fff;
+        color: $Purple;
+        border: 2px solid $Purple;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    &__filled{
+        height: 44px;
+        width: 99px;
+        background: $grad;
+        color: #fff;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+}
+.button-block__label{
+    margin-bottom: 16px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 99px 99px;
+    grid-template-rows: 44px 44px;
+    grid-column-gap: 19px;
+    grid-row-gap: 30px;
+    margin-bottom: 31px;
+}
+@import 'hovered/hovered';
+@import '_txt/_txt';
+@import '_large/_large';

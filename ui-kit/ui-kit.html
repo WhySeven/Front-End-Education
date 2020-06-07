@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
   <body class="body">
     <main>
@@ -175,85 +176,142 @@
                   <p class="font-body like__font" id="like__count_2">12</p>
                 </div>
               </div>
-              <script>$('#like_1').click(function(){
+            </div>
+            <script>$('#like_1').click(function(){
     let count = parseInt($('#like__count_1').text());
     if ($(this).hasClass('active')){
-        count++;
+        count--;
         $('#like__count_1').text(count);
         $('.like__icon_1').text('favorite_border');
     }
     else{
-        count--;
+        count++;
         $('#like__count_1').text(count);
         $('.like__icon_1').text('favorite');
     }
-    console.log(count);
-    
 });
+
+
 
 $('#like_2').click(function(){
     let count = parseInt($('#like__count_2').text());
     if ($(this).hasClass('active')){
-        count++;
+        count--;
         $('#like__count_2').text(count);
         $('.like__icon_2').text('favorite_border');
     }
     else{
-        count--;
+        count++;
         $('#like__count_2').text(count);
         $('.like__icon_2').text('favorite');
     }
-    console.log(count);
-
 });
+
+
 
 $('.like').click(function(){
     $(this).toggleClass("active");
 });
-              </script>
+            </script>
+          </div>
+          <div class="form-elements__rate-button">
+            <div class="rate-block">
+              <h3 class="font-h3 rate-block__label">rate button</h3>
+              <div class="rate-buttons">
+                <div class="rate-button" id="rate__buton_1">
+                  <div class="material-icons rate-button__star" id="rate_1">star</div>
+                  <div class="material-icons rate-button__star" id="rate_2">star</div>
+                  <div class="material-icons rate-button__star" id="rate_3">star</div>
+                  <div class="material-icons rate-button__star" id="rate_4">star</div>
+                  <div class="material-icons rate-button__star" id="rate_5">star_border</div>
+                </div>
+                <div class="rate-button" id="rate__button_2">
+                  <div class="material-icons rate-button__star">star</div>
+                  <div class="material-icons rate-button__star">star</div>
+                  <div class="material-icons rate-button__star">star</div>
+                  <div class="material-icons rate-button__star">star</div>
+                  <div class="material-icons rate-button__star">star</div>
+                </div>
+              </div>
             </div>
+            <script>let rate = [];
+let average = 0;
+let max = 1;
+let votes = 1;
+$('#rate__buton_1 .rate-button__star').each(function(){
+    if($('#rate_' + max).text() == 'star'){
+        average++;
+    }
+    rate[max-1] = '#rate_' + (max);
+    max++;
+});
+let summ = average;
+for(let i=0; i<rate.length; i++){
+    $(rate[i]).mouseenter(function(){
+        for(let j = 0; j < rate.length; j++){
+            if(j <= i)
+                $(rate[j]).text('star');
+            else
+                $(rate[j]).text('star_border');
+        }
+    })
+    .mouseleave(function(){
+        for(let j = 0; j < rate.length; j++){
+            if(j<average.toFixed())
+                $(rate[j]).text('star');
+            else
+                $(rate[j]).text('star_border');
+        }
+    });
+    $(rate[i]).click(function(){
+        votes++;
+        summ += i+1;
+        average = summ/votes;
+    });
+}
+            </script>
           </div>
         </div>
         <div class="form-elements__3-column">
-          <div class="form-elements__checkbox">
-            <div class="checkbox-block">
-              <h3 class="font-h3 checkbox-block__label">checkbox buttons</h3>
-              <div class="checkbox-block__checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
-                </label>
-                <p class="checkbox-block__text font-body">Можно курить</p>
+          <div class="form-elements__range-slider">
+            <div class="range-slider-block">
+              <div class="range-slider-block__text">
+                <h3 class="font-h3 range-slider-block__label">range slider</h3>
+                <p class="font-body range-slider-block__info">5 000₽ - 10 000₽</p>
               </div>
-              <div class="checkbox-block__checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
-                </label>
-                <p class="checkbox-block__text font-body">Можно с питомцами</p>
-              </div>
-              <div class="checkbox-block__checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
-                </label>
-                <p class="checkbox-block__text font-body">Можно пригласить гостей (до 10 человек)</p>
-              </div>
+              <div class="ui-slider"></div>
             </div>
+            <script>let a,b,c,d;
+$('.ui-slider').slider({
+    range: true,
+    min: 0,
+    max: 15000,
+    values: [5000, 10000],
+    step: 1000,
+    slide: function( event, ui ) {
+        a = ui.values[0]/1000;
+        if(ui.values[0]!=0)
+            b = a + ' 000';
+        else
+            b = a;
+
+        c = ui.values[1]/1000;
+        if(ui.values[1]!=0)
+            d = c + ' 000';
+        else
+            d = c;
+        $('.range-slider-block__info').text(b + '₽ - ' + d + '₽');
+    }
+});
+            </script>
           </div>
-          <div class="form-elements__toggle">
-            <div class="toggles-block">
-              <h3 class="font-h3 toggles-block__label">toggle</h3>
-              <div class="toggles">
-                <div class="toggle-block">
-                  <div class="toggle active" onclick="this.classList.toggle('active')">
-                    <div class="toggle__circle"></div>
-                  </div>
-                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
-                </div>
-                <div class="toggle-block">
-                  <div class="toggle" onclick="this.classList.toggle('active')">
-                    <div class="toggle__circle"></div>
-                  </div>
-                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
-                </div>
+          <div class="form-elements__button">
+            <div class="button-block">
+              <h3 class="font-h3 button-block__label">buttons</h3>
+              <div class="buttons"><a class="button button__filled font-body" href="#">click me</a><a class="button button__filled font-body hovered" href="#">click me</a><a class="button button__bordered font-body" href="#">click me</a><a class="button button__bordered font-body hovered" href="#">click me</a></div>
+              <div class="buttons_txt buttons_txt__margin"><a class="button_txt gray-font font-body" href="#">click me</a><a class="button_txt purple-font font-body" href="#">click me</a></div>
+              <div class="button_large"><a class="button_large__button button button__filled font-body" href="#">перейти к оплате</a>
+                <p class="material-icons button_large__arrow">arrow_forward</p>
               </div>
             </div>
           </div>

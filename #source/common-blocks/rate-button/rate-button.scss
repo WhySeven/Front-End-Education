@@ -1,0 +1,22 @@
+.rate-button{
+    &:hover{
+        cursor:default;
+    }
+    display: flex;
+    &s{
+        display: grid;
+        grid-template-columns: repeat(2, 120px);
+        grid-column-gap: 20px;
+    }
+    .material-icons{
+        font-size: 24px;
+        line-height: 20px;
+    }
+    &__star{
+        width: 24px;
+        background: $grad;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.rate-block__label{margin-bottom: 16px;}

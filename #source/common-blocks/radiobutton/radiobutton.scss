@@ -8,7 +8,8 @@
 }
 .radioButton{
     &__text{
-        display: inline-block;
+        display: flex;
+        align-items: center;
         position: relative;
         padding-left: 30px;
         padding-bottom: 2px;
@@ -16,10 +17,8 @@
         line-height: 18px;
         color: $Dark50;
         &::before{
-            top:0;
-            left:0;
+            left:0px;
             content: "";
-            display: block;
             width: 20px;
             height: 20px;
             position: absolute;
@@ -28,12 +27,11 @@
             border-radius: 50%;
         }
         &::after{
-            display: block;
+            left:5px;
+            top:50%;
             content:'';
             position: absolute;
-            top:11px;
-            left: 11px;
-            transform: translate(-50%, -50%);
+            transform: translate(0, -50%);
             border-radius: 50%;
             width: 12px;
             height: 12px;
