@@ -1,22 +1,13 @@
 div(class='form-elements wrapper')
     div(class="form-elements__1-column")
-        div(class="text-block")
-            div(class="text-block__title")
-                h3(class="font-h3") text field
-                h3(class="font-h3 text-block__right-text") default
+        div(class="form-elements__text-field")
             include ../../../common-blocks/text-field/text-field.pug
-        div(class="text-block")
-            div(class="text-block__title")
-                h3(class="font-h3") text field
-                h3(class="font-h3 text-block__right-text") hover/focus
-            input(type="text" class="text-field text-field_hover font-body" placeholder="This is pretty awesome")
-        div(class="text-block")
-            div(class="text-block__title")
-                h3(class="font-h3") dropdown
-                h3(class="font-h3 text-block__right-text") default
+        div(class="form-elements__text-field_hovered")
+            include ../../../common-blocks/text-field/text-field_hovered.pug
+        div(class="form-elements__dropdown")
             include ../../../common-blocks/dropdown/dropdown.pug
-        include ../../../common-blocks/text-field/_masked/text-field_masked.pug
-
+        div(class="form-elements__text-field_masked")
+            include ../../../common-blocks/text-field/_masked/text-field_masked.pug
     div(class="form-elements__2-column")
         div(class="form-elements__checkbox")
             include ../../../common-blocks/checkbox/checkbox.pug
@@ -27,10 +18,17 @@ div(class='form-elements wrapper')
         div(class="form-elements__like-button")
             include ../../../common-blocks/like-button/like-button.pug
         div(class="form-elements__rate-button")
-            include ../../../common-blocks/rate-button/rate-button.pug
-            
+            include ../../../common-blocks/rate-button/rate-button.pug        
     div(class="form-elements__3-column")
         div(class="form-elements__range-slider")
             include ../../../common-blocks/range-slider/range-slider.pug
         div(class="form-elements__button")
             include ../../../common-blocks/button/button.pug
+        div(class="form-elements__paginaton")
+            include ../../../common-blocks/pagination/pagination.pug
+        div(class="form-elements__exp-checkbox")
+            include ../../../common-blocks/checkbox/_exp/exp-checkbox.pug
+        div(class="form-elements__hotel-feature")
+            include ../../../common-blocks/hotel-feature/hotel-feature.pug
+        div(class="form-elements__hotel-feature")
+            include ../../../common-blocks/checkbox/_reach/checkbox_reach.pug

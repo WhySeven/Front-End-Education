@@ -1,183 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link rel="stylesheet" href="ui-kit.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  </head>
-  <body class="body">
-    <main>
-      <div class="colors-type wrapper">
-        <div class="colors-type__colors">
-          <div class="color color__margin">
-            <div class="sqr drk-100"></div>
-            <h2 class="color__h2 font-h2">Dark Shade 100%<br><span class="not-bold">#1F2041</span></h2>
-          </div>
-          <div class="color color__margin">
-            <div class="sqr drk-75"></div>
-            <h2 class="color__h2 font-h2">Dark Shade 75%<br><span class="not-bold">#1F2041</span></h2>
-          </div>
-          <div class="color color__margin">
-            <div class="sqr drk-50"></div>
-            <h2 class="color__h2 font-h2">Dark Shade 50%<br><span class="not-bold">#1F2041</span></h2>
-          </div>
-          <div class="color color__margin">
-            <div class="sqr drk-25"></div>
-            <h2 class="color__h2 font-h2">Dark Shade 25%<br><span class="not-bold">#1F2041</span></h2>
-          </div>
-          <div class="color color__margin">
-            <div class="sqr drk-5"></div>
-            <h2 class="color__h2 font-h2">Dark Shade 5%<br><span class="not-bold">#1F2041</span></h2>
-          </div>
-          <div class="color color__margin">
-            <div class="sqr purple"></div>
-            <h2 class="color__h2 font-h2">Purple<br><span class="not-bold">#BC9CFF</span></h2>
-          </div>
-          <div class="color color__margin">
-            <div class="sqr green"></div>
-            <h2 class="color__h2 font-h2">Green<br><span class="not-bold">#6FCF97</span></h2>
-          </div>
-        </div>
-        <div class="colors-type__fonts">
-          <div class="font-block">
-            <div class="font-block__names">
-              <div class="font-block__name font-block__name_h1">H1</div>
-              <div class="font-block__name font-block__name_h2">H2</div>
-              <div class="font-block__name font-block__name_h3">H3</div>
-              <div class="font-block__name font-block__name_body">Body</div>
-            </div>
-            <div class="font-block__fonts">
-              <div class="font-block__font-margin"> 
-                <H1 class="font-h1">This one is the sub-section or<br> widget title    </H1>
-              </div>
-              <div class="font-block__font-margin"> 
-                <H2 class="font-h2">Next one is the item title inside<br> widgets                      </H2>
-              </div>
-              <div class="font-block__font-margin">
-                <H3 class="font-h3">This is a label or CTA text</H3>
-              </div>
-              <div class="font-body font-block__font-margin">
-                <p class="font-body">This is the body text which is used for most<br> of the design, like paragraphs, lists, etc.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="form-elements wrapper">
-        <div class="form-elements__1-column">
-          <div class="text-block">
-            <div class="text-block__title">
-              <h3 class="font-h3">text field</h3>
-              <h3 class="font-h3 text-block__right-text">default</h3>
-            </div>
-            <input class="text-field font-body" type="text" placeholder="Email">
-          </div>
-          <div class="text-block">
-            <div class="text-block__title">
-              <h3 class="font-h3">text field</h3>
-              <h3 class="font-h3 text-block__right-text">hover/focus</h3>
-            </div>
-            <input class="text-field text-field_hover font-body" type="text" placeholder="This is pretty awesome">
-          </div>
-          <div class="text-block">
-            <div class="text-block__title">
-              <h3 class="font-h3">dropdown</h3>
-              <h3 class="font-h3 text-block__right-text">default</h3>
-            </div>
-            <div class="dropdown">
-              <ul class="dropdown__list font-body">Сколько гостей
-                <li class="dropdown__item dropdown__item_frst"><a class="dropdown__link" href="#">1</a></li>
-                <li class="dropdown__item"><a class="dropdown__link" href="#">2</a></li>
-                <li class="dropdown__item"><a class="dropdown__link" href="#">3</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="text-block">
-            <div class="text-block__title">
-              <h3 class="font-h3">masked text field</h3>
-              <h3 class="font-h3 text-block__right-text">default</h3>
-            </div>
-            <input class="text-field font-body" type="text" data-mask="00.00.0000" placeholder="ДД.ММ.ГГГГ">
-          </div>
-        </div>
-        <div class="form-elements__2-column">
-          <div class="form-elements__checkbox">
-            <div class="checkbox-block">
-              <h3 class="font-h3 checkbox-block__label">checkbox buttons</h3>
-              <div class="checkbox-block__checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span>
-                </label>
-                <p class="checkbox-block__text font-body">Можно курить</p>
-              </div>
-              <div class="checkbox-block__checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
-                </label>
-                <p class="checkbox-block__text font-body">Можно с питомцами</p>
-              </div>
-              <div class="checkbox-block__checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span>
-                </label>
-                <p class="checkbox-block__text font-body">Можно пригласить гостей (до 10 человек)</p>
-              </div>
-            </div>
-          </div>
-          <div class="form-elements__radioButton">
-            <div class="radioButton-block">
-              <h3 class="font-h3 radioButton-block__label">radio buttons</h3>
-              <div class="radioButton-block__radioButtons">
-                <div class="radioButton-block__radioButton">
-                  <label class="radioButton">
-                    <input class="radioButton__main" type="radio" name="radio_1" checked>
-                    <p class="radioButton__text font-body">Мужчина</p>
-                  </label>
-                </div>
-                <div class="radioButton-block__radioButton">
-                  <label class="radioButton">
-                    <input class="radioButton__main" type="radio" name="radio_1">
-                    <p class="radioButton__text font-body">Женщина</p>
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="form-elements__toggle">
-            <div class="toggles-block">
-              <h3 class="font-h3 toggles-block__label">toggle</h3>
-              <div class="toggles">
-                <div class="toggle-block">
-                  <div class="toggle active" onclick="this.classList.toggle('active')">
-                    <div class="toggle__circle"></div>
-                  </div>
-                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
-                </div>
-                <div class="toggle-block">
-                  <div class="toggle" onclick="this.classList.toggle('active')">
-                    <div class="toggle__circle"></div>
-                  </div>
-                  <p class="toggle-block__text font-body">Получать спецпредложения</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="form-elements__like-button">
-            <div class="like-block">
-              <h3 class="font-h3 like-block__label">like button</h3>
-              <div class="like-buttons">
-                <div class="like" id="like_1"><span class="material-icons like__icon_1">favorite_border</span>
-                  <p class="font-body like__font" id="like__count_1">2</p>
-                </div>
-                <div class="like active" id="like_2"><span class="material-icons like__icon_2">favorite</span>
-                  <p class="font-body like__font" id="like__count_2">12</p>
-                </div>
-              </div>
-            </div>
-            <script>$('#like_1').click(function(){
+<!doctype html><html lang="en"><head><link rel="stylesheet" href="ui-kit.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script></head><body class="body"><main><div class="colors-type wrapper"><div class="colors-type__colors"><div class="color color__margin"><div class="sqr drk-100"></div><h2 class="color__h2 font-h2">Dark Shade 100%<br><span class="not-bold">#1F2041</span></h2></div><div class="color color__margin"><div class="sqr drk-75"></div><h2 class="color__h2 font-h2">Dark Shade 75%<br><span class="not-bold">#1F2041</span></h2></div><div class="color color__margin"><div class="sqr drk-50"></div><h2 class="color__h2 font-h2">Dark Shade 50%<br><span class="not-bold">#1F2041</span></h2></div><div class="color color__margin"><div class="sqr drk-25"></div><h2 class="color__h2 font-h2">Dark Shade 25%<br><span class="not-bold">#1F2041</span></h2></div><div class="color color__margin"><div class="sqr drk-5"></div><h2 class="color__h2 font-h2">Dark Shade 5%<br><span class="not-bold">#1F2041</span></h2></div><div class="color color__margin"><div class="sqr purple"></div><h2 class="color__h2 font-h2">Purple<br><span class="not-bold">#BC9CFF</span></h2></div><div class="color color__margin"><div class="sqr green"></div><h2 class="color__h2 font-h2">Green<br><span class="not-bold">#6FCF97</span></h2></div></div><div class="colors-type__fonts"><div class="font-block"><div class="font-block__names"><div class="font-block__name font-block__name_h1">H1</div><div class="font-block__name font-block__name_h2">H2</div><div class="font-block__name font-block__name_h3">H3</div><div class="font-block__name font-block__name_body">Body</div></div><div class="font-block__fonts"><div class="font-block__font-margin"><h1 class="font-h1">This one is the sub-section or<br>widget title</h1></div><div class="font-block__font-margin"><h2 class="font-h2">Next one is the item title inside<br>widgets</h2></div><div class="font-block__font-margin"><h3 class="font-h3">This is a label or CTA text</h3></div><div class="font-body font-block__font-margin"><p class="font-body">This is the body text which is used for most<br>of the design, like paragraphs, lists, etc.</p></div></div></div></div></div><div class="form-elements wrapper"><div class="form-elements__1-column"><div class="form-elements__text-field"><div class="text-block"><div class="text-block__title"><h3 class="font-h3">text field</h3><h3 class="font-h3 text-block__right-text">default</h3></div><input class="text-field font-body" type="text" placeholder="Email"></div></div><div class="form-elements__text-field_hovered"><div class="text-block"><div class="text-block__title"><h3 class="font-h3">text field</h3><h3 class="font-h3 text-block__right-text">hover/focus</h3></div><input class="text-field text-field_hover font-body" type="text" placeholder="This is pretty awesome"></div></div><div class="form-elements__dropdown"><div class="text-block"><div class="text-block__title"><h3 class="font-h3">dropdown</h3><h3 class="font-h3 text-block__right-text">default</h3></div><div class="dropdown"><div class="dropdown__expand-button border-radius_all"><p class="font-body dropdown__label">Сколько гостей</p><div class="dropdown__expand-icon"><p class="material-icons">expand_more</p></div></div><div class="dropdown__content"><div class="dropdown__item"><h3 class="font-h3 dropdown__label">Взрослые</h3><div class="dropdown__button-block"><div class="dropdown__button">-</div><h3 class="font-h3 dropdown__count">0</h3><div class="dropdown__button">+</div></div></div><div class="dropdown__item"><h3 class="font-h3 dropdown__label">Дети</h3><div class="dropdown__button-block"><div class="dropdown__button">-</div><h3 class="font-h3 dropdown__count">0</h3><div class="dropdown__button">+</div></div></div><div class="dropdown__item"><h3 class="font-h3 dropdown__label">Младенцы</h3><div class="dropdown__button-block"><div class="dropdown__button">-</div><h3 class="font-h3 dropdown__count">0</h3><div class="dropdown__button">+</div></div></div><div class="dropdown__button-block__bottom flex-end"><div class="dropdown__button_clear"><p class="button_txt gray-font font-h3">очистить</p></div><div class="dropdown__button_enter"><p class="button_txt purple-font font-h3">применить</p></div></div></div></div></div><script>function create_dropdown(){
+    $(".dropdown__expand-button").click(function(){
+        $(".dropdown__content").toggle();
+        $(".dropdown__expand-button").toggleClass('border-radius');
+        $(".dropdown__expand-button").toggleClass('border-radius_all');
+    });
+    let i = 0;
+    $(".dropdown__button-block").each(function(){
+        let buttonblock = ".dropdown__button-block:eq("+i+")";
+        $(buttonblock + " .dropdown__button:eq(0)").click(function(){
+            let txt = parseInt($(buttonblock + " h3").text());
+            if(txt>0){
+                $(buttonblock + " h3").text(txt-1);  
+            }
+        });
+        $(buttonblock + " .dropdown__button:eq(1)").click(function(){
+            let txt = parseInt($(buttonblock + " h3").text());
+            $(buttonblock + " h3").text(txt+1);
+        });
+        i++;
+    });
+    $(".dropdown__button_enter").click(function(){
+        let count = 0;
+        let mod;
+        $(".dropdown__button-block .dropdown__count").each(function(){
+            count+=parseInt($(this).text());
+        });
+        if(count == 1)
+            mod = " гость";
+        else if(count == 0)
+            mod = " гостей";
+        else if(count < 5)
+            mod = " гостя";
+        else
+            mod = " гостей";
+        $(".dropdown__label:eq(0)").text(count + mod);
+        $('.dropdown__button-block__bottom').addClass('space-between');
+        $('.dropdown__button-block__bottom').removeClass('flex-end');
+    });
+    $(".dropdown__button_clear").click(function(){
+        $(".dropdown__label:eq(0)").text('Сколько гостей');
+        i=0;
+        $(".dropdown__button-block").each(function(){
+            let buttonblock = ".dropdown__button-block:eq("+i+")";
+            $(buttonblock + " h3").text(0); 
+            i++;
+        });
+        $('.dropdown__button-block__bottom').removeClass('space-between');
+        $('.dropdown__button-block__bottom').addClass('flex-end');
+    });
+}
+create_dropdown();</script></div><div class="form-elements__text-field_masked"><div class="text-block"><div class="text-block__title"><h3 class="font-h3">masked text field</h3><h3 class="font-h3 text-block__right-text">default</h3></div><input class="text-field font-body" type="text" data-mask="00.00.0000" placeholder="ДД.ММ.ГГГГ"></div><script>var $jscomp=$jscomp||{};$jscomp.scope={},$jscomp.findInternal=function(t,a,e){t instanceof String&&(t=String(t));for(var n=t.length,s=0;s<n;s++){var o=t[s];if(a.call(e,o,s,t))return{i:s,v:o}}return{i:-1,v:void 0}},$jscomp.ASSUME_ES5=!1,$jscomp.ASSUME_NO_NATIVE_MAP=!1,$jscomp.ASSUME_NO_NATIVE_SET=!1,$jscomp.SIMPLE_FROUND_POLYFILL=!1,$jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(t,a,e){t!=Array.prototype&&t!=Object.prototype&&(t[a]=e.value)},$jscomp.getGlobal=function(t){return("undefined"==typeof window||window!==t)&&"undefined"!=typeof global&&null!=global?global:t},$jscomp.global=$jscomp.getGlobal(this),$jscomp.polyfill=function(t,a,e,n){if(a){for(e=$jscomp.global,t=t.split("."),n=0;n<t.length-1;n++){var s=t[n];s in e||(e[s]={}),e=e[s]}(a=a(n=e[t=t[t.length-1]]))!=n&&null!=a&&$jscomp.defineProperty(e,t,{configurable:!0,writable:!0,value:a})}},$jscomp.polyfill("Array.prototype.find",function(t){return t||function(t,a){return $jscomp.findInternal(this,t,a).v}},"es6","es3"),function(t,a,e){"function"==typeof define&&define.amd?define(["jquery"],t):"object"==typeof exports&&"undefined"==typeof Meteor?module.exports=t(require("jquery")):t(a||e)}(function(r){function i(c,g,M){var y={invalid:[],getCaret:function(){try{var t,a=0,e=c.get(0),n=document.selection,s=e.selectionStart;return n&&-1===navigator.appVersion.indexOf("MSIE 10")?((t=n.createRange()).moveStart("character",-y.val().length),a=t.text.length):!s&&"0"!==s||(a=s),a}catch(t){}},setCaret:function(t){try{var a,e;c.is(":focus")&&((a=c.get(0)).setSelectionRange?a.setSelectionRange(t,t):((e=a.createTextRange()).collapse(!0),e.moveEnd("character",t),e.moveStart("character",t),e.select()))}catch(t){}},events:function(){c.on("keydown.mask",function(t){c.data("mask-keycode",t.keyCode||t.which),c.data("mask-previus-value",c.val()),c.data("mask-previus-caret-pos",y.getCaret()),y.maskDigitPosMapOld=y.maskDigitPosMap}).on(r.jMaskGlobals.useInput?"input.mask":"keyup.mask",y.behaviour).on("paste.mask drop.mask",function(){setTimeout(function(){c.keydown().keyup()},100)}).on("change.mask",function(){c.data("changed",!0)}).on("blur.mask",function(){o===y.val()||c.data("changed")||c.trigger("change"),c.data("changed",!1)}).on("blur.mask",function(){o=y.val()}).on("focus.mask",function(t){!0===M.selectOnFocus&&r(t.target).select()}).on("focusout.mask",function(){M.clearIfNotMatch&&!n.test(y.val())&&y.val("")})},getRegexMask:function(){for(var t,a,e,n,s=[],o=0;o<g.length;o++)(t=b.translation[g.charAt(o)])?(a=t.pattern.toString().replace(/.{1}$|^.{1}/g,""),e=t.optional,(t=t.recursive)?(s.push(g.charAt(o)),n={digit:g.charAt(o),pattern:a}):s.push(e||t?a+"?":a)):s.push(g.charAt(o).replace(/[-\/\\^$*+?.()|[\]{}]/g,"\\$&"));return s=s.join(""),n&&(s=s.replace(new RegExp("("+n.digit+"(.*"+n.digit+")?)"),"($1)?").replace(new RegExp(n.digit,"g"),n.pattern)),new RegExp(s)},destroyEvents:function(){c.off("input keydown keyup paste drop blur focusout ".split(" ").join(".mask "))},val:function(t){var a=c.is("input")?"val":"text";return a=0<arguments.length?(c[a]()!==t&&c[a](t),c):c[a]()},calculateCaretPosition:function(t){var a=y.getMasked(),e=y.getCaret();if(t!==a){for(var n=c.data("mask-previus-caret-pos")||0,a=a.length,s=t.length,o=t=0,r=0,i=0,l=e;l<a&&y.maskDigitPosMap[l];l++)o++;for(l=e-1;0<=l&&y.maskDigitPosMap[l];l--)t++;for(l=e-1;0<=l;l--)y.maskDigitPosMap[l]&&r++;for(l=n-1;0<=l;l--)y.maskDigitPosMapOld[l]&&i++;s<e?e=10*a:e<=n&&n!==s?y.maskDigitPosMapOld[e]||(e=(n=e)-(i-r)-t,y.maskDigitPosMap[e]&&(e=n)):n<e&&(e=e+(r-i)+o)}return e},behaviour:function(t){t=t||window.event,y.invalid=[];var a=c.data("mask-keycode");if(-1===r.inArray(a,b.byPassKeys)){a=y.getMasked();var e=y.getCaret(),n=c.data("mask-previus-value")||"";return setTimeout(function(){y.setCaret(y.calculateCaretPosition(n))},r.jMaskGlobals.keyStrokeCompensation),y.val(a),y.setCaret(e),y.callbacks(t)}},getMasked:function(t,a){var e,n,s,o=[],r=void 0===a?y.val():a+"",i=0,l=g.length,c=0,u=r.length,p=1,f="push",d=-1,k=0;for(a=[],n=M.reverse?(f="unshift",p=-1,e=0,i=l-1,c=u-1,function(){return-1<i&&-1<c}):(e=l-1,function(){return i<l&&c<u});n();){var m=g.charAt(i),h=r.charAt(c),v=b.translation[m];v?(h.match(v.pattern)?(o[f](h),v.recursive&&(-1===d?d=i:i===e&&i!==d&&(i=d-p),e===d&&(i-=p)),i+=p):h===s?(k--,s=void 0):v.optional?(i+=p,c-=p):v.fallback?(o[f](v.fallback),i+=p,c-=p):y.invalid.push({p:c,v:h,e:v.pattern}),c+=p):(t||o[f](m),h===m?(a.push(c),c+=p):(s=m,a.push(c+k),k++),i+=p)}return t=g.charAt(e),l!==u+1||b.translation[t]||o.push(t),o=o.join(""),y.mapMaskdigitPositions(o,a,u),o},mapMaskdigitPositions:function(t,a,e){for(t=M.reverse?t.length-e:0,y.maskDigitPosMap={},e=0;e<a.length;e++)y.maskDigitPosMap[a[e]+t]=1},callbacks:function(t){function a(t,a,e){"function"==typeof M[t]&&a&&M[t].apply(this,e)}var e=y.val(),n=e!==o,s=[e,t,c,M];a("onChange",!0==n,s),a("onKeyPress",!0==n,s),a("onComplete",e.length===g.length,s),a("onInvalid",0<y.invalid.length,[e,t,c,y.invalid,M])}};c=r(c);var n,b=this,o=y.val();g="function"==typeof g?g(y.val(),void 0,c,M):g,b.mask=g,b.options=M,b.remove=function(){var t=y.getCaret();return b.options.placeholder&&c.removeAttr("placeholder"),c.data("mask-maxlength")&&c.removeAttr("maxlength"),y.destroyEvents(),y.val(b.getCleanVal()),y.setCaret(t),c},b.getCleanVal=function(){return y.getMasked(!0)},b.getMaskedVal=function(t){return y.getMasked(!1,t)},b.init=function(t){if(t=t||!1,M=M||{},b.clearIfNotMatch=r.jMaskGlobals.clearIfNotMatch,b.byPassKeys=r.jMaskGlobals.byPassKeys,b.translation=r.extend({},r.jMaskGlobals.translation,M.translation),b=r.extend(!0,{},b,M),n=y.getRegexMask(),t)y.events(),y.val(y.getMasked());else{M.placeholder&&c.attr("placeholder",M.placeholder),c.data("mask")&&c.attr("autocomplete","off");for(var a=!(t=0);t<g.length;t++){var e=b.translation[g.charAt(t)];if(e&&e.recursive){a=!1;break}}a&&c.attr("maxlength",g.length).data("mask-maxlength",!0),y.destroyEvents(),y.events(),t=y.getCaret(),y.val(y.getMasked()),y.setCaret(t)}},b.init(!c.is("input"))}r.maskWatchers={};function a(){var t=r(this),a={},e=t.attr("data-mask");if(t.attr("data-mask-reverse")&&(a.reverse=!0),t.attr("data-mask-clearifnotmatch")&&(a.clearIfNotMatch=!0),"true"===t.attr("data-mask-selectonfocus")&&(a.selectOnFocus=!0),l(t,e,a))return t.data("mask",new i(this,e,a))}var l=function(t,a,e){e=e||{};var n=r(t).data("mask"),s=JSON.stringify;t=r(t).val()||r(t).text();try{return"function"==typeof a&&(a=a(t)),"object"!=typeof n||s(n.options)!==s(e)||n.mask!==a}catch(t){}},t=function(t){var a=document.createElement("div"),e=(t="on"+t)in a;return e||(a.setAttribute(t,"return;"),e="function"==typeof a[t]),e};r.fn.mask=function(t,a){a=a||{};function e(){if(l(this,t,a))return r(this).data("mask",new i(this,t,a))}var n=this.selector,s=(o=r.jMaskGlobals).watchInterval,o=a.watchInputs||o.watchInputs;return r(this).each(e),n&&""!==n&&o&&(clearInterval(r.maskWatchers[n]),r.maskWatchers[n]=setInterval(function(){r(document).find(n).each(e)},s)),this},r.fn.masked=function(t){return this.data("mask").getMaskedVal(t)},r.fn.unmask=function(){return clearInterval(r.maskWatchers[this.selector]),delete r.maskWatchers[this.selector],this.each(function(){var t=r(this).data("mask");t&&t.remove().removeData("mask")})},r.fn.cleanVal=function(){return this.data("mask").getCleanVal()},r.applyDataMask=function(t){((t=t||r.jMaskGlobals.maskElements)instanceof r?t:r(t)).filter(r.jMaskGlobals.dataMaskAttr).each(a)},t={maskElements:"input,td,span,div",dataMaskAttr:"*[data-mask]",dataMask:!0,watchInterval:300,watchInputs:!0,keyStrokeCompensation:10,useInput:!/Chrome\/[2-4][0-9]|SamsungBrowser/.test(window.navigator.userAgent)&&t("input"),watchDataMask:!1,byPassKeys:[9,16,17,18,36,37,38,39,40,91],translation:{0:{pattern:/\d/},9:{pattern:/\d/,optional:!0},"#":{pattern:/\d/,recursive:!0},A:{pattern:/[a-zA-Z0-9]/},S:{pattern:/[a-zA-Z]/}}},r.jMaskGlobals=r.jMaskGlobals||{},(t=r.jMaskGlobals=r.extend(!0,{},t,r.jMaskGlobals)).dataMask&&r.applyDataMask(),setInterval(function(){r.jMaskGlobals.watchDataMask&&r.applyDataMask()},t.watchInterval)},window.jQuery,window.Zepto)</script></div></div><div class="form-elements__2-column"><div class="form-elements__checkbox"><div class="checkbox-block"><h3 class="font-h3 checkbox-block__label">checkbox buttons</h3><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Можно курить</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Можно с питомцами</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Можно пригласить гостей<br>(до 10 человек)</p></div></div></div><div class="form-elements__radioButton"><div class="radioButton-block"><h3 class="font-h3 radioButton-block__label">radio buttons</h3><div class="radioButton-block__radioButtons"><div class="radioButton-block__radioButton"><label class="radioButton"><input class="radioButton__main" type="radio" name="radio_1" checked><p class="radioButton__text font-body">Мужчина</p></label></div><div class="radioButton-block__radioButton"><label class="radioButton"><input class="radioButton__main" type="radio" name="radio_1"><p class="radioButton__text font-body">Женщина</p></label></div></div></div></div><div class="form-elements__toggle"><div class="toggles-block"><h3 class="font-h3 toggles-block__label">toggle</h3><div class="toggles"><div class="toggle-block"><div class="toggle active" onclick='this.classList.toggle("active")'><div class="toggle__circle"></div></div><p class="toggle-block__text font-body">Получать спецпредложения</p></div><div class="toggle-block"><div class="toggle" onclick='this.classList.toggle("active")'><div class="toggle__circle"></div></div><p class="toggle-block__text font-body">Получать спецпредложения</p></div></div></div></div><div class="form-elements__like-button"><div class="like-block"><h3 class="font-h3 like-block__label">like button</h3><div class="like-buttons"><div class="like" id="like_1"><span class="material-icons like__icon_1">favorite_border</span><p class="font-body like__font" id="like__count_1">2</p></div><div class="like active" id="like_2"><span class="material-icons like__icon_2">favorite</span><p class="font-body like__font" id="like__count_2">12</p></div></div></div><script>$('#like_1').click(function(){
     let count = parseInt($('#like__count_1').text());
     if ($(this).hasClass('active')){
         count--;
@@ -211,30 +83,7 @@ $('#like_2').click(function(){
 
 $('.like').click(function(){
     $(this).toggleClass("active");
-});
-            </script>
-          </div>
-          <div class="form-elements__rate-button">
-            <div class="rate-block">
-              <h3 class="font-h3 rate-block__label">rate button</h3>
-              <div class="rate-buttons">
-                <div class="rate-button" id="rate__buton_1">
-                  <div class="material-icons rate-button__star" id="rate_1">star</div>
-                  <div class="material-icons rate-button__star" id="rate_2">star</div>
-                  <div class="material-icons rate-button__star" id="rate_3">star</div>
-                  <div class="material-icons rate-button__star" id="rate_4">star</div>
-                  <div class="material-icons rate-button__star" id="rate_5">star_border</div>
-                </div>
-                <div class="rate-button" id="rate__button_2">
-                  <div class="material-icons rate-button__star">star</div>
-                  <div class="material-icons rate-button__star">star</div>
-                  <div class="material-icons rate-button__star">star</div>
-                  <div class="material-icons rate-button__star">star</div>
-                  <div class="material-icons rate-button__star">star</div>
-                </div>
-              </div>
-            </div>
-            <script>let rate = [];
+});</script></div><div class="form-elements__rate-button"><div class="rate-block"><h3 class="font-h3 rate-block__label">rate button</h3><div class="rate-buttons"><div class="rate-button" id="rate__buton_1"><div class="material-icons rate-button__star" id="rate_1">star</div><div class="material-icons rate-button__star" id="rate_2">star</div><div class="material-icons rate-button__star" id="rate_3">star</div><div class="material-icons rate-button__star" id="rate_4">star</div><div class="material-icons rate-button__star" id="rate_5">star_border</div></div><div class="rate-button" id="rate__button_2"><div class="material-icons rate-button__star">star</div><div class="material-icons rate-button__star">star</div><div class="material-icons rate-button__star">star</div><div class="material-icons rate-button__star">star</div><div class="material-icons rate-button__star">star</div></div></div></div><script>let rate = [];
 let average = 0;
 let max = 1;
 let votes = 1;
@@ -268,20 +117,7 @@ for(let i=0; i<rate.length; i++){
         summ += i+1;
         average = summ/votes;
     });
-}
-            </script>
-          </div>
-        </div>
-        <div class="form-elements__3-column">
-          <div class="form-elements__range-slider">
-            <div class="range-slider-block">
-              <div class="range-slider-block__text">
-                <h3 class="font-h3 range-slider-block__label">range slider</h3>
-                <p class="font-body range-slider-block__info">5 000₽ - 10 000₽</p>
-              </div>
-              <div class="ui-slider"></div>
-            </div>
-            <script>let a,b,c,d;
+}</script></div></div><div class="form-elements__3-column"><div class="form-elements__range-slider"><div class="range-slider-block"><div class="range-slider-block__text"><h3 class="font-h3 range-slider-block__label">range slider</h3><p class="font-body range-slider-block__info">5 000₽ - 10 000₽</p></div><div class="ui-slider"></div></div><script>let a,b,c,d;
 $('.ui-slider').slider({
     range: true,
     min: 0,
@@ -302,22 +138,4 @@ $('.ui-slider').slider({
             d = c;
         $('.range-slider-block__info').text(b + '₽ - ' + d + '₽');
     }
-});
-            </script>
-          </div>
-          <div class="form-elements__button">
-            <div class="button-block">
-              <h3 class="font-h3 button-block__label">buttons</h3>
-              <div class="buttons"><a class="button button__filled font-body" href="#">click me</a><a class="button button__filled font-body hovered" href="#">click me</a><a class="button button__bordered font-body" href="#">click me</a><a class="button button__bordered font-body hovered" href="#">click me</a></div>
-              <div class="buttons_txt buttons_txt__margin"><a class="button_txt gray-font font-body" href="#">click me</a><a class="button_txt purple-font font-body" href="#">click me</a></div>
-              <div class="button_large"><a class="button_large__button button button__filled font-body" href="#">перейти к оплате</a>
-                <p class="material-icons button_large__arrow">arrow_forward</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script src="../js/jquery.mask.min.js"></script>
-  </body>
-</html>
+});</script></div><div class="form-elements__button"><div class="button-block"><h3 class="font-h3 button-block__label">buttons</h3><div class="buttons"><a class="button button__filled font-body" href="#">click me</a><a class="button button__filled font-body hovered" href="#">click me</a><a class="button button__bordered font-body" href="#">click me</a><a class="button button__bordered font-body hovered" href="#">click me</a></div><div class="buttons_txt buttons_txt__margin"><a class="button_txt gray-font font-h3" href="#">click me</a><a class="button_txt purple-font font-h3" href="#">click me</a></div><div class="button_large"><a class="button_large__button button button__filled font-body" href="#">перейти к оплате</a><p class="material-icons button_large__arrow">arrow_forward</p></div></div></div><div class="form-elements__paginaton"><div class="pagination-block"><h3 class="font-h3 pagination-block__label">radio buttons</h3><div class="pagination"><a class="font-h3 pagination__selected" href="#">1</a><a class="font-h3 pagination__link" href="#">2</a><a class="font-h3 pagination__link" href="#">3</a><a class="font-h3 pagination__link" href="#">...</a><a class="font-h3 pagination__link" href="#">15</a><a class="font-h3 pagination__next" href="#"><p class="material-icons">arrow_forward</p></a></div><div class="pagination-footer"><p class="font-body">1 – 12 из 100+ вариантов аренды</p></div></div></div><div class="form-elements__exp-checkbox"><div class="exp-checkbox-block"><div class="exp-checkbox-block__label"><h3 class="font-h3">expandable checkbox list</h3><p class="material-icons">expand_more</p></div><div class="exp-checkbox-block__list hide"><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Завтрак</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Письменный стол</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Стул для кормления</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Кроватка</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Телевизор</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Шампунь</p></div></div></div><div class="exp-checkbox-block"><div class="exp-checkbox-block__label"><h3 class="font-h3">expandable checkbox list</h3><p class="material-icons">expand_more</p></div><div class="exp-checkbox-block__list"><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Завтрак</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Письменный стол</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Стул для кормления</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Кроватка</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Телевизор</p></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><p class="checkbox-block__text font-body">Шампунь</p></div></div></div><script>$(".exp-checkbox-block").each(function(c){$(".exp-checkbox-block__label:eq("+c+")").click(function(){$(".exp-checkbox-block__list:eq("+c+")").toggle(300)})})</script></div><div class="form-elements__hotel-feature"><div class="hotel-feature"><div class="hotel-feature__item"><h3 class="material-icons">insert_emoticon</h3><p class="font-body hotel-feture__text"><span class="span">Комфорт</span><br>Шумопоглощающие стены</p></div><div class="hotel-feature__item"><h3 class="material-icons">location_city</h3><p class="font-body hotel-feture__text"><span class="span">Удобство</span><br>Окно в каждой из спален</p></div></div></div><div class="form-elements__hotel-feature"><div class="checkbox-block_reach"><h3 class="font-h3 checkbox-block__label">Rich Checkbox Buttons</h3><div class="checkboxes"><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox"><span class="checkbox__fake"></span></label><div class="checkbox-text"><p class="checkbox-block_reach__text font-body">Широкий коридор</p><p class="font-h3 checkbox-block_reach__text_descr">Ширина коридоров в номере<br>не менее 91 см.</p></div></div><div class="checkbox-block__checkbox"><label class="checkbox"><input class="checkbox__main" type="checkbox" checked><span class="checkbox__fake"></span></label><div class="checkbox-text"><p class="checkbox-block_reach__text font-body">Помощник для инвалидов</p><p class="font-h3 checkbox-block_reach__text_descr">На 1 этаже вас встретит специалист<br>и проводит до номера.</p></div></div></div></div></div></div></div></main></body></html>

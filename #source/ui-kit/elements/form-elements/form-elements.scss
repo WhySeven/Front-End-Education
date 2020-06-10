@@ -5,10 +5,23 @@
 .form-elements{
     padding-top: 200px;
     padding-left: 140px;
-    height: 1000px;
+    height: 1200px;
     width:1300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    &__text-field{
+        margin-bottom: 20px;
+    }
+    &__text-field_hovered{
+        margin-bottom: 20px;
+    }
+    &__dropdown{
+        padding-bottom: 22px;
+    }
+    &__text-field_masked{
+        margin-bottom: 40px;
+    }
     &__checkbox{
         margin-bottom: 41px;
     }
@@ -24,9 +37,16 @@
     &__range-slider{
         margin-bottom: 43px;
     }
+    &__button{
+        margin-bottom: 40px;
+    }
 }
 
 @import "../../../common-blocks/checkbox/checkbox";
+
+@import "../../../common-blocks/checkbox/_exp/exp-checkbox.scss";
+
+@import "../../../common-blocks/checkbox/_reach/checkbox_reach.scss";
 
 @import "../../../common-blocks/radiobutton/radiobutton";
 
@@ -39,3 +59,7 @@
 @import "../../../common-blocks/range-slider/range-slider";
 
 @import "../../../common-blocks/button/button";
+
+@import "../../../common-blocks/pagination/pagination";
+
+@import "../../../common-blocks/hotel-feature/hotel-feature.scss";

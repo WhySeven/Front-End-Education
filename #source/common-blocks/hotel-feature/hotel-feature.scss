@@ -1,0 +1,24 @@
+.hotel-feature{
+    &__item{
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding-bottom: 20px;
+        width: 280px;
+        border-bottom: 1px solid $Dark10;
+    }
+    &__text{
+        color: $Dark75;
+    }
+    .span{
+        font-weight: bold;
+    }
+    .material-icons{
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+        background: $grad;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

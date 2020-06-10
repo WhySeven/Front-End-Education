@@ -3,7 +3,7 @@
     grid-template-rows: 32px 32px 32px 1fr;
     &__checkbox{
         display: grid;
-        grid-template-columns: 30px 200px;
+        grid-template-columns: 30px 1fr;
     }
     &__text{
         padding-top:2px;

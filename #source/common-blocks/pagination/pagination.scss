@@ -1,0 +1,45 @@
+.pagination{
+    display: flex;
+    &-block__label{margin-bottom: 16px;}
+    &__selected{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: $grad;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:#fff;
+        text-decoration: none;
+    }
+    &__next{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        text-decoration: none;
+        color:#fff;
+        font-size: 24px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__link{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:$Dark50;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+    }
+    &-footer{
+        margin-top:10px;
+        width:241px;
+        display: flex;
+        justify-content: center;
+    }
+}
