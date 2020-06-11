@@ -2,14 +2,15 @@
 
 @import "../../../common-blocks/dropdown/dropdown";
 
+@import "../../../common-blocks/dropdown/_about-aprtmnt/dropdown";
+
 .form-elements{
     padding-top: 200px;
     padding-left: 140px;
-    height: 1200px;
     width:1300px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 100px;
     &__text-field{
         margin-bottom: 20px;
     }
@@ -18,12 +19,23 @@
     }
     &__dropdown{
         padding-bottom: 22px;
+        &_exp{
+            padding-bottom: 200px ;
+        }
     }
     &__text-field_masked{
         margin-bottom: 40px;
     }
     &__checkbox{
         margin-bottom: 41px;
+        &_exp{
+            &_1{
+                margin-bottom: 20px;
+            }
+            &_2{
+                margin-bottom: 0px;
+            }
+        }
     }
     &__radioButton{
         margin-bottom: 37px;
@@ -39,6 +51,9 @@
     }
     &__button{
         margin-bottom: 40px;
+    }
+    &__hotel-feature{
+        margin-bottom: 130px;
     }
 }
 
