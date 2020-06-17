@@ -1,0 +1,26 @@
+.dropdown-block_date{
+    width: 150px;
+    position: relative;
+    .dropdown_date{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $Dark25;
+        border-radius: 4px;
+        &:hover{
+            border: 1px solid $Dark50;
+        }
+    }
+    .purple-font{
+        position: absolute;
+        top:334px;
+        left:216px;
+    }
+}
+.datepicker-block{
+    position: absolute;
+    z-index: 9999;
+    display:none;
+    background: #fff;
+}
+

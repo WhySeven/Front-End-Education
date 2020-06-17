@@ -1,8 +1,12 @@
-@import "../../../common-blocks/text-field/text-field";
+@import "../../../common-blocks/form-elements/text-field/text-field";
 
-@import "../../../common-blocks/dropdown/dropdown";
+@import "../../../common-blocks/form-elements/dropdown/dropdown";
 
-@import "../../../common-blocks/dropdown/_about-aprtmnt/dropdown";
+@import "../../../common-blocks/form-elements/dropdown/_about-aprtmnt/dropdown";
+
+@import "../../../common-blocks/form-elements/dropdown/_date/dropdown_date";
+
+@import "../../../common-blocks/form-elements/dropdown/_date/datepicker";
 
 .form-elements{
     padding-top: 200px;
@@ -23,6 +27,9 @@
             padding-bottom: 200px ;
         }
     }
+    &__about-aprtmnt_1{
+        margin-bottom: 20px;
+    }
     &__text-field_masked{
         margin-bottom: 40px;
     }
@@ -30,7 +37,7 @@
         margin-bottom: 41px;
         &_exp{
             &_1{
-                margin-bottom: 20px;
+                margin-bottom: 50px;
             }
             &_2{
                 margin-bottom: 0px;
@@ -55,26 +62,37 @@
     &__hotel-feature{
         margin-bottom: 130px;
     }
+    &__11-column{
+        grid-column-start: 2;
+        grid-column-end: 4;
+ 
+    }
 }
 
-@import "../../../common-blocks/checkbox/checkbox";
+@import "../../../common-blocks/form-elements/checkbox/checkbox";
 
-@import "../../../common-blocks/checkbox/_exp/exp-checkbox.scss";
+@import "../../../common-blocks/form-elements/checkbox/_exp/exp-checkbox.scss";
 
-@import "../../../common-blocks/checkbox/_reach/checkbox_reach.scss";
+@import "../../../common-blocks/form-elements/checkbox/_reach/checkbox_reach.scss";
 
-@import "../../../common-blocks/radiobutton/radiobutton";
+@import "../../../common-blocks/form-elements/radiobutton/radiobutton";
 
-@import "../../../common-blocks/toggle/toggle";
+@import "../../../common-blocks/form-elements/toggle/toggle";
 
-@import "../../../common-blocks/like-button/like-button";
+@import "../../../common-blocks/form-elements/like-button/like-button";
 
-@import "../../../common-blocks/rate-button/rate-button";
+@import "../../../common-blocks/form-elements/rate-button/rate-button";
 
-@import "../../../common-blocks/range-slider/range-slider";
+@import "../../../common-blocks/form-elements/range-slider/range-slider";
 
-@import "../../../common-blocks/button/button";
+@import "../../../common-blocks/form-elements/button/button";
 
-@import "../../../common-blocks/pagination/pagination";
+@import "../../../common-blocks/form-elements/pagination/pagination";
 
-@import "../../../common-blocks/hotel-feature/hotel-feature.scss";
+@import "../../../common-blocks/form-elements/hotel-feature/hotel-feature.scss";
+
+@import "../../../common-blocks/form-elements/bullet-list/bullet-list.scss";
+
+@import "../../../common-blocks/form-elements/review/review.scss";
+
+@import "../../../common-blocks/form-elements/expand-icon/expand-icon.scss";

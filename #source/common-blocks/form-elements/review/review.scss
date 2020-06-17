@@ -1,0 +1,27 @@
+.review-block{
+    display:grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: 48px 1fr;
+    grid-column-gap:10px;
+    grid-row-gap: 12px;
+    &__avatar{
+        width: 48px;
+        height: 48px;
+        border:2px solid #fff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        box-shadow: 0px 10px 20px $Dark10;
+        margin-right: 10px;
+    }
+    &__info{
+        .span{font-weight: bold;}
+    }
+    &__like{
+        display:flex;
+        justify-content: center;
+    }
+    &__review{
+        width: 653px;
+    }
+    
+}
